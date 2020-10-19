@@ -9,6 +9,8 @@
         android:id="@+id/txtInfo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Informe seu nome e ano de nascimento e clique em Calcular" />
+        android:gravity="center"
+        android:text="Informe seu nome e ano de nascimento e clique em Calcular"
+        android:textSize="24sp" />
 
 </FrameLayout>

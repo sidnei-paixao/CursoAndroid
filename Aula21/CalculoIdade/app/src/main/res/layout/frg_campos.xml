@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center|center_horizontal"
     android:orientation="vertical"
     tools:context=".frgCampos">
 
@@ -10,22 +11,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Informe o seu nome:" />
+
     <EditText
         android:id="@+id/txtNome"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Informe o seu nome:" />
+
     <EditText
         android:id="@+id/txtAno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
     <Button
         android:id="@+id/cmdCalcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:text="Calcular idade" />
 
 </LinearLayout>
