@@ -1,6 +1,5 @@
 package com.example.telalista
 
-import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,9 +17,9 @@ class GeraLista (private val oDados: List<ItemQuadro>): RecyclerView.Adapter<Ger
 
         fun bind(oValor: ItemQuadro)
         {
-            oImagem.setImageDrawable(Drawable.createFromPath("@layout/ic_foto_32dp.xml"))
+            oImagem.setImageResource(oValor.oImagem ?: 0)
             oNome.setText(oValor.cNome)
-            oNome.setText(oValor.cTexto)
+            oTexto.setText(oValor.cTexto)
         }
     }
 

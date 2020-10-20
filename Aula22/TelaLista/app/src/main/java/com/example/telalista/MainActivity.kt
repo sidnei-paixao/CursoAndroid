@@ -12,10 +12,10 @@ class MainActivity : AppCompatActivity() {
 
     val oListaItems = GeraLista(
       arrayListOf(
-        ItemQuadro(null, "Teste 1", "Mensagem de texto 1"),
-        ItemQuadro(null, "Teste 2", "Mensagem de texto 2"),
+        ItemQuadro(R.drawable.ic_foto_32dp, "Teste 1", "Mensagem de texto 1"),
+        ItemQuadro(R.drawable.ic_foto_32dp, "Teste 2", "Mensagem de texto 2"),
         ItemQuadro(null, "Teste 3", "Mensagem de texto 3"),
-        ItemQuadro(null, "Teste 3", "Mensagem de texto excessivamente longa que ele deverá cortar na classe")
+        ItemQuadro(R.drawable.ic_foto_32dp, "Teste 3", "Mensagem de texto excessivamente longa que ele deverá cortar na classe")
       )
     )
 
