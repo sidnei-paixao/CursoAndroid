@@ -1,5 +1,6 @@
 package com.example.desafiows.ui.login
 
+import android.content.Intent
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.annotation.StringRes
@@ -16,6 +17,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.Toast
+import com.example.desafiows.ComicsActivity
 
 import com.example.desafiows.R
 import java.lang.Exception
@@ -114,10 +116,11 @@ class LoginFragment : Fragment() {
     }
 
     private fun updateUiWithUser(model: LoggedInUserView) {
-        val welcome = getString(R.string.welcome) + model.displayName
+        /*val welcome = getString(R.string.welcome) + model.displayName
         // TODO : initiate successful logged in experience
         val appContext = context?.applicationContext ?: return
-        Toast.makeText(appContext, welcome, Toast.LENGTH_LONG).show()
+        Toast.makeText(appContext, welcome, Toast.LENGTH_LONG).show()*/
+        startActivity(Intent(context, ComicsActivity::class.java))
     }
 
     private fun showLoginFailed(@StringRes errorString: Int) {
